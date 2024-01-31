@@ -1,0 +1,642 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parfums Femmes</title>
+    <!-- Dernier CSS compilé et minifié -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Dernier JavaScript compilé -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+      header{
+    background-image: url(photo/istockphoto-1491165707-612x612.jpg);
+    height: 200px;
+    background-position: center;
+    background-size: 60%;
+
+}
+.logo a{
+    color: #000;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+.logo span{
+    color: rgb(161, 36, 36);
+    font-weight: bold;
+    font-size:2rem;
+}
+nav{
+    width: 100%;
+    margin: 0 auto;
+    position: sticky;
+    top: 0px;
+}
+
+nav ul{
+    list-style-type: none;
+    ;
+}
+
+nav ul li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    font-style: italic
+}
+
+nav ul::after{
+    display: table;
+    clear: both;
+}
+
+nav a{
+    display: block;
+    text-decoration: none;
+    color: black;
+    border-bottom: 2px solid transparent;
+    padding: 10px 0px;
+}
+
+nav a:hover{
+    color: rgb(218, 132, 186);
+    border-bottom: 2px solid rgb(227, 94, 194);
+    
+}
+
+
+
+        .parfums{
+    margin-top: -100px;
+}
+
+.parfums .contenu{
+  background: #eae3e3;
+    display: flex;
+    justify-content: left;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+.parfums .contenu .box{
+  background-color: #fff;
+  border-radius: 20px;
+    width: 250px;
+    margin: 10px;
+    border: 5px solid #fff;
+    box-shadow: 15px 10px 15px rgba(0,0,0, 0.8);
+    scale: 0.8;
+   
+    
+}
+
+.parfums .contenu .box:hover{
+    transition: 1.5s;
+    box-shadow: 15px 10px 15px rgba(162, 157, 157, 0.8);
+    box-shadow: 5px 15px 25px rgb(169, 130, 130);
+  
+  
+}
+
+.parfums .contenu .box .imbox{
+    position: relative;
+    width: 200%;
+    height: 270px;
+}
+  .parfums .contenu .box .imbox img{
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 50%;
+    height: 250px;
+    margin: auto;
+    transition: all 0.3s;
+    scale: 0.8;
+}
+.parfums .contenu .box .imbox img:hover{
+    scale: 0.9;
+    
+}
+.parfums .contenu .box .text{
+    text-align: center;
+    font-weight: 300px;
+    color: #111;
+}
+
+.parfums.contenu .box .text h3{
+    font-weight: 400;
+}
+.parfums .contenu .box .prix{
+    text-align: center;
+    font-weight: 300px;
+    color: #e40d0d;
+}
+.parfums .contenu .box .btn{
+    text-decoration: none;
+    font-size: 13px;
+    color: #da9692;
+    padding: 10px 20px;
+    font-weight: 900;
+    border: 2.5px solid #111;
+    border-radius: 20px;
+    margin: 10px;
+    transition: 1s;
+    height: 20px 20px;
+    float: left;
+   
+}
+.parfums .contenu .box .btn:hover{
+    color: #000;
+    cursor: pointer;
+    border-color: #dea6a6;
+    background-color: #938b8b;
+}
+.titre-texte{
+    color: #000;
+    font-size: 2em;
+    font-weight: 300px;
+   background-color: #df81bb;
+    width: 100%;
+    text-align: center;
+    
+
+}
+
+.v2{
+ float:right;
+ margin: 10px 20px;
+ width: 50%;
+}
+.v1{
+  margin: 10px 20px;
+  width: 50%;
+}
+.c1 , .c2{
+    color: #fff;
+    font-size: 2em;
+    font-weight: 300px;
+    background-color: #000;
+    width: 100%;
+    text-align: center;
+    transition: all 1s ease;
+   animation: titre 1s ease-in-out infinite;
+
+}
+.c2:hover{
+  color:goldenrod;
+}
+.c1:hover{
+  color:goldenrod;
+}
+
+
+@keyframes titre{
+  0%{
+    text-replace: translateY(0px);
+  }
+  20%{
+    transform: translateY(-20px);
+  }
+  40%,100%{
+    transform: translateY(0px);
+  }
+}
+.icon{
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 10000;
+  display: flex;
+  column-gap: 0.5em;
+}
+.icon a i {
+  text-decoration: none;
+    color: #fff;
+    padding: 4px;
+    border-radius: 50%;
+   float: left;
+   
+}
+  
+.icon a i:hover {
+    color: #da9692;
+}
+.pag{
+  
+  justify-content: center;
+}
+
+    </style>
+</head>
+<body>
+  <header>
+    <div class="logo"><br>
+      <a href="#"><span>P </span> A R F U M S</a>
+    </div>
+    <div class="icon">
+       <a href="panier.html"><i class="fa-solid fa-bag-shopping"></i></a>
+       <a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass " id="search-icon"></i></a>
+    </div>
+  <nav>
+   <ul>
+    <li class="active">
+        <a href="parfums.html">Accueil</a>
+    </li>
+    <li>
+        <a href="# Parfums Femmes">Parfums Femmes</a>
+    </li>
+    <li>
+        <a href="# Parfums Femmes Arabe">Parfums Femmes Arabe</a>
+    </li>
+    <li>
+        <a href="# LES TENDANCES COFFRET PARFUM">LES TENDANCES COFFRET PARFUM</a>
+    </li>
+   </ul>
+  </nav>
+</div>
+
+  </header><br><br><br>
+      <div class="titre">
+        <div class="btn btn-outline-dark  titre-texte"  id=" Parfums Femmes">Parfums Femmes</div>
+      </div><br><br>
+    <section class="parfums" id="parfums">
+         
+        <div class="contenu">
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-18 à 22.20.04_28cadea4.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>LA NUIT TRESOI</h3>
+            </div>
+            <div class="prix">14.5$</div>
+            <a href="panier.html" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-17 à 22.12.14_adccde44.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>J'ADORE</h3>
+            </div>
+            <div class="prix">19.2 $</div>
+            <a href="panier.html" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/Cassilis parfums.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>CASSILIA</h3>
+            </div>
+            <div class="prix">20.36 $</div>
+            <a href="panier.html" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-19 à 17.28.19_3e11b292.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>MISS DOIR</h3>
+            </div>
+            <div class="prix">20.7 $</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-19 à 16.26.44_77c03897.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>LA VIE EST BELLE</h3>
+            </div>
+            <div class="prix">34.44 $</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-19 à 16.26.45_01a4fa5d.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>LIBRE</h3>
+            </div>
+            <div class="prix">21.7 $</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-19 à 17.34.33_6e30b917.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>VICRORIA'S SECRET</h3>
+            </div>
+            <div class="prix">30.2 $</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-20 à 13.05.17_342ada27.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>SI</h3>
+            </div>
+            <div class="prix">60.55 $</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-20 à 13.05.19_af0ab827.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>MILLION</h3>
+            </div>
+            <div class="prix">40.50$</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-20 à 13.05.18_641604a9.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>BLACK OPUM</h3>
+            </div>
+            <div class="prix">30.66$</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-20 à 13.05.18_ffe8ef85.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>DOLCE & GABBANA </h3>
+            </div>
+            <div class="prix">60.21$</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-20 à 13.05.19_63d6fa92.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>OLYMPEA</h3>
+            </div>
+            <div class="prix">34.5$</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-20 à 13.05.19_0654585d.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>CLUB DE NUIT</h3>
+            </div>
+            <div class="prix">32.90$</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-20 à 13.05.15_fc362ad2.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>BVLGARI</h3>
+            </div>
+            <div class="prix">50.87$</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-20 à 13.05.17_0136c3eb.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>COOD GIRL</h3>
+            </div>
+            <div class="prix">34.59$</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+          <div class="box">
+            <div class="imbox">
+              <img src="photo/WhatsApp Image 2023-12-20 à 13.05.15_40280a62.jpg" alt="">
+            </div>
+            <div class="text">
+              <h3>OH!</h3>
+            </div>
+            <div class="prix">30.6 $</div>
+            <a href="#" class="btn" >En vente</a>
+          </div>
+        </div><br>
+
+        <ul class="pagination pag">
+          <li class="page-item "><a class="page-link" href="#">Précédent</a></li>
+          <li class="page-item active"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">Suivant</a></li>
+          </ul><br><br>
+
+
+
+          <div class="titre">
+            <div class="btn btn-outline-dark  titre-texte"  id=" Parfums Femmes Arabe">Parfums Femmes Arabe</div>
+          </div>
+          <div class="contenu">
+            <div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2023-12-20 à 13.05.15_4c80cd51.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>BINT HOORAN</h3>
+              </div>
+              <div class="prix">70.70$</div>
+              <a href="panier.html" class="btn" >En vente</a>
+            </div>
+            <div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2024-01-06 à 15.46.19_65b18681.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>ETERNAL OUD</h3>
+              </div>
+              <div class="prix">90.54$</div>
+              <a href="panier.html" class="btn" >En vente</a>
+            </div>
+            <div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2024-01-05 à 22.55.44_9530354d.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>BADE'E AL OUD</h3>
+              </div>
+              <div class="prix">66.09$</div>
+              <a href="panier.html" class="btn" >En vente</a>
+            </div>
+            <div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2023-12-20 à 13.05.15_30ee19ca.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>FKHAR LATTAFA</h3>
+              </div>
+              <div class="prix">50.70$</div>
+              <a href="#" class="btn" >En vente</a>
+            </div><div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2023-12-20 à 13.05.16_3bce7e47.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>AMEERAT AL ARAB </h3>
+              </div>
+              <div class="prix">90.5$</div>
+              <a href="#" class="btn" >En vente</a>
+            </div><div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2023-12-20 à 13.05.16_bab7ea48.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>YARA</h3>
+              </div>
+              <div class="prix">40.76$</div>
+              <a href="#" class="btn" >En vente</a>
+            </div>
+            <div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2023-12-20 à 13.05.16_e8b48755.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>HEIBAH</h3>
+              </div>
+              <div class="prix">50.09$</div>
+              <a href="#" class="btn" >En vente</a>
+            </div>
+            <div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2023-12-20 à 13.05.17_5174a665.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>VELVET ROSE</h3>
+              </div>
+              <div class="prix">58.48$</div>
+              <a href="#" class="btn" >En vente</a>
+            </div>
+          </div><br>
+
+          <ul class="pagination pag">
+            <li class="page-item "><a class="page-link" href="#">Précédent</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Suivant</a></li>
+            </ul><br><br>
+          
+
+          <div class="titre">
+            <div class="btn btn-outline-dark  titre-texte"  id=" LES TENDANCES COFFRET PARFUM">LES TENDANCES COFFRET PARFUM</div>
+          </div>
+          <div class="contenu">
+            <div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2023-12-24 à 17.42.35_793f36de.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>IDOLE</h3>
+                <p>COFFRET PARFUM</p>
+              </div>
+              <div class="prix">78.10$</div>
+              <a href="panier.html" class="btn" >En vente</a>
+            </div>
+            <div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2023-12-24 à 17.42.37_21ac9d97.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>TIFFANY & CO</h3>
+                <p>COFFRET PARFUM</p>
+              </div>
+              <div class="prix">80.65$</div>
+              <a href="panier.html" class="btn" >En vente</a>
+            </div><div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2023-12-24 à 17.42.36_f9ce179f.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>L'INTERDIT </h3>
+                <p>COFFRET PARFUM</p>
+              </div>
+              <div class="prix">90.50$</div>
+              <a href="panier.html" class="btn" >En vente</a>
+            </div><div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2024-01-06 à 15.59.25_4ab45901.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>LA PRTITE ROBE NOIRE </h3>
+                <p>COFFRET PARFUM</p>
+              </div>
+              <div class="prix">100.50$</div>
+              <a href="#" class="btn" >En vente</a>
+            </div><div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2024-01-06 à 15.46.19_504cedc3.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>MON ERIDENCE </h3>
+                <p>COFFRET PARFUM</p>
+              </div>
+              <div class="prix">80.96$</div>
+              <a href="#" class="btn" >En vente</a>
+            </div><div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2023-12-24 à 17.42.44_e66e36ed.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>LA VIE EST ELLE</h3>
+                <p>COFFRET PARFUM</p>
+              </div>
+              <div class="prix">86.6$</div>
+              <a href="#" class="btn" >En vente</a>
+            </div>
+            <div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2023-12-24 à 17.42.43_fc438a4f.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>MUGLER</h3>
+                <p>COFFRET PARFUM</p>
+              </div>
+              <div class="prix">87.09$</div>
+              <a href="#" class="btn" >En vente</a>
+            </div>
+            <div class="box">
+              <div class="imbox">
+                <img src="photo/WhatsApp Image 2023-12-24 à 17.42.46_53c98b7b.jpg" alt="">
+              </div>
+              <div class="text">
+                <h3>TENTETION OUD</h3>
+                <p>COFFRET PARFUM</p>
+              </div>
+              <div class="prix">67.48$</div>
+              <a href="#" class="btn" >En vente</a>
+            </div>
+          </div><br>
+
+          <ul class="pagination pag">
+            <li class="page-item "><a class="page-link" href="#">Précédent</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Suivant</a></li>
+            </ul><br><br>
+
+
+          <div class="btn btn-outline-dark  titre-texte">DES PUBLICATION DES PARFUMS</div><br><br>
+          <div>
+            <br><h2 class="c2">VIDÉO LIBRE EAU DE PARFUM YVES SAINT LAURENT</h2>
+            <video class="v1" src="photo/WhatsApp Vidéo 2024-01-06 à 14.59.23_8b48775b.mp4" controls > </video> 
+        </div>
+        <div>
+          <br><h2 class="c1">VIDÉO J'ADORE EAU DE PARFUM DOIR</h2><br>
+          <video class="v2" src="photo/WhatsApp Vidéo 2024-01-06 à 15.11.10_d3172d85.mp4" controls > </video> 
+      </div>
+      
+</body>
+</html>

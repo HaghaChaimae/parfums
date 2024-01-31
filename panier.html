@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Votre Panier</title>
+    <style>
+    *{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+header{ 
+    background-color: #000;
+    background-size: 40px;
+    background-position: center;
+   
+}
+.logo a{
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+    margin: 10px 20px;
+}
+.logo span{
+    color: rgb(161, 36, 36);
+    font-weight: bold;
+    font-size:2rem;
+}
+.navbar{
+    width: 100%;
+    background-color: #000;
+    height: 90px;
+}
+.navbar ul{
+    display: flex;
+    float: right;
+    padding: 10px 20px
+}
+.navbar li{
+    list-style: none;
+    align-self: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar a{
+    color: #fff;
+    text-decoration: none;
+    margin-left: 30px;
+    font-weight: 700;
+    transition: all 1s ease;
+}
+
+.navbar li a:hover{
+    color: #c890b0;
+   
+    transition: ease-out;
+}
+.formulaire{
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    align-items: center;
+}
+.formulaire form {
+    width: 90%;
+    height: 100%;
+    padding: 20px 10px;
+    border-radius: 25px;
+    margin: 0 auto;
+    display: table;
+    box-shadow: inset 0 0 25px rgba(0, 0, 0, 0.2);
+}
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    border-bottom: 1px solid #888;
+    text-shadow: 3px 0 0 #df9fc3;
+    overflow: hidden;
+    letter-spacing: 20px;
+   animation: type_writer 5.5s steps(30,end) infinite;
+   
+}
+@keyframes type_writer{
+   from{
+    width: 0;
+   }
+   to{
+    width: 100%;
+   }
+  }
+h3{
+    text-align: left;
+    text-shadow: 1px 1px 0px #9b6885;
+    animation: text 2s 1;
+}
+@keyframes text{
+    0%{
+        color: #da9692;
+        margin-bottom: 5px;
+    }
+    60%{
+        letter-spacing: 5px;
+        margin-bottom: 9px;
+    }
+    85%{
+        letter-spacing: 5px;
+        margin-bottom: 9px;
+    }
+}
+
+label{
+    font-size: 19px;
+}
+.star{
+    color: #df9fc3;
+    font-size: 20px;
+    margin-left: 3px;
+    font-weight: bold;
+}
+.formulaire .form1 ,.formulaire .form2{
+    width: 40%;
+    display:inline-table;
+    margin: 50px;
+}
+
+.input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border-radius: 6px;
+    border: 1px solid #1c1b1c;
+}
+.input:hover{
+    border: 2px solid gray;
+    font-weight: bold;
+}
+.button input{
+    width: 90%;
+    padding: 8px;
+    background: #888;
+    color: #fff;
+    font-size: 19px;
+    border: none;
+    border-radius: 10px;
+    transition: all .4s ease-in;
+    margin: 0 auto;
+    display: table;
+    cursor: pointer;
+}
+.button input:hover{
+    background: #d68181;
+    transition: all .4s ease-in;
+
+}
+
+.contact {
+    background: grey;
+    padding: 5rem 0;
+    width: 100%;
+  }
+  .row{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  ul{
+    list-style: none;
+  }
+.blanc h3 a{
+    text-decoration: none;
+    font-size: 18px;
+    color: #d68181;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+    font-weight: 500;
+    position: relative;
+    padding: 0px 20px;
+    height: 20px;
+    
+}
+.blanc h3 a::before{
+    content: '';
+    position: absolute;
+    left:5;
+    bottom: -10px;
+    background-color: #383848;
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;  
+}
+
+.blanc ul li a{
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    padding: 2px 20px;
+    display: block;
+    color: #383848;
+    text-transform: capitalize;
+    transition: all 0.3s ease;
+}
+.blanc ul li a:hover{
+    color: #0f0f11;
+    padding: 6px;
+}
+.blanc  a i {
+    color: #fff;
+    background: #383848;
+    padding: 10px;
+    font-size: 20px;
+    border-radius: 50%;
+    margin: 10px;
+  }
+  
+  .blanc  a i:hover {
+    background-color:  #da9692;
+    color: #383848;
+    margin: 10px;
+  }
+ .icon {
+    height: 90px;
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+    background-color: #595964;
+    
+
+ }
+.icon p{
+    color: #fff;
+   height: 30px;
+}
+.icon p:hover{
+    color: #d68181;
+}
+  
+.icon i{
+    color:  #da9692;
+    margin: 10px 10px;
+   
+}
+.do h6{
+  color: #ded2d2;
+  justify-content: center;
+  text-align: justify;
+  margin: 0px 40px;
+ 
+}
+.icon2 .i1{
+  margin: 0px 10px ;
+  padding: 10px;
+    color: #ded2d2;
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        <div class="principale">
+          <div class="logo"><br>
+            <a href="#"><span>P </span> A R F U M S</a>
+          </div>
+        </div>
+        <div class="navbar">
+          <ul>
+            <li ><a href="parfums.html">Accueil</a></li>
+            <li><a href="parfums femmes.html">Parfums Femmes</a></li>
+            <li><a href="parfums hommes.html">Parfums Hommes</a> </li>
+            <li> <a href="#contact">contact</a></li>    
+            <li><a href="panier.html"><i class="fa-solid fa-bag-shopping"></i></a></li>
+            <li><a href="#"><i class="fa-sharp fa-solid fa-magnifying-glass"></i></a></li>
+          </ul>
+        </div>
+    </header>
+    <div class="formulaire">
+        <div class="barre"></div><br>
+        <form>
+            <h2 class="titre">PANIER</h2><br>
+            <div class="form1">
+                <h3>Informations  des parfums</h3><br>
+
+                <label for="Nom de Prdouits">Nom de Parfums <span class="star">*</span></label><br>
+                <input type="text" id="Nom de Parfums" placeholder=" Nom de Parfums" required class="input"><br><br>
+
+
+                <label for="Sise de Parfums">Sise de Parfums <span class="star">*</span></label><br>
+                <select id="Sise de Parfums" class="input">
+                    <option >30ml</option>
+                    <option >70ml</option>
+                    <option>100ml</option>
+                </select><br><br>
+
+                <label for="sexe">sexe <span class="star">*</span></label><br>
+                FEMME<input type="radio" name="sexe" checked> &nbsp;
+                HOMME<input type="radio" name="sexe"> &nbsp;<br><br>
+
+                <label for="nbr">pièces <span class="star">*</span></label><br>
+                1 pièces<input type="radio" name="nbr" checked> &nbsp;
+                2 pièces<input type="radio" name="nbr"> &nbsp;
+                3 pièces <input type="radio" name="nbr"> &nbsp;<br>
+                <input type="text" id="nbr de pièces" placeholder=" nbr de pièces" required class="input"><br><br>
+            </div>
+            <div class="form2">
+                <h3>Informations  de Clients</h3><br>
+                <label for="Nom complet">Nom complet <span class="star">*</span></label><br>
+                <input type="text" id="Nom complet" placeholder=" votre Nom complet" required class="input"><br><br>
+
+                <label for="Adresse ">Adresse <span class="star">*</span></label><br>
+                <input type="text" id="Adresse " placeholder=" votre Adresse " required class="input"><br><br>
+
+                <label for="Telephone">Numéro de téléphone <span class="star">*</span></label><br>
+                <input type="text" id="Telephone" placeholder=" votre Numéro de téléphone" required class="input"><br><br>
+
+                <label for="Email">Email <span class="star">*</span></label><br>
+                <input type="email" id="Email" placeholder=" votre Email" required class="input"><br><br>
+
+                <label for="Pays ">Pays <span class="star">*</span></label><br>
+                <select id="Pays" class="input">
+                    <option >Maroc</option>
+                    <option >Égypte</option>
+                    <option>Espagne </option>
+                    <option > Canada</option>
+                    <option >Italie</option>
+                    <option>Turquie </option>
+                    <option >Ukraine </option>
+                    <option >Algérie</option>
+                    <option> Tunisie </option>
+                </select><br><br>
+
+                <label for="Villes">Villes <span class="star">*</span></label><br>
+                <input type="text" id="Villes" placeholder=" votre Villes" required class="input"><br><br>
+
+                <label for="RIB">RIB de Banque<span class="star">*</span></label><br>
+                <input type="text" id="RIB" placeholder=" votre RIB de banque" required class="input"><br><br>
+            </div>
+            <div class="button">
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+    </div>
+    <div class="icon" id="contact">
+        <div class="do">
+           <p><i class="fa-solid fa-clock"></i>LIVRAISON OFFERTE</p>
+           <h6>24h ou 48h les jours ouvrés</h6>
+            <h6> chez votre commerçant</h6>
+        </div>
+        <div class="do">
+            <p> <i class="fa-solid fa-truck"></i>LIVRAISON RAPIDE</p>
+            <h6>des 20$ d'achat</h6>
+        </div>
+        <div class="do">
+            <p><i class="fa-solid fa-hand-holding-heart"></i> AVANTAGES FIDÉLITÉ</p>
+            <h6>5% de votre commande sur</h6>
+            <h6> votre prochain achat</h6>
+        </div>
+        <div class="icon2">
+          <P><i class="fa-solid fa-money-check"></i>PAIEMENT SÉCURISÉ</P>
+          <i class="fa-brands fa-cc-visa i1"></i>
+          <i class="fa-brands fa-cc-mastercard i1"></i>
+          <i class="fa-brands fa-cc-discover i1"></i>
+          <i class="fa-brands fa-cc-amazon-pay i1"></i>
+
+        </div>
+        
+       
+    </div>
+    <div class="contact">
+         <div class="container">
+             <div class="row">
+                 <div class="blanc">
+                    <h3> <a href="parfums.html">Accueil</a></h3><br><br>
+                    <ul>
+                      <li>
+                          <a href="parfums femmes.html">Parfums Femmes</a>
+                      </li>
+                      <li>
+                          <a href="parfums hommes.html">Parfums Hommes</a>
+                      </li>
+                      <li>
+                          <a href="#">contact</a>
+                      </li>
+                    </ul>
+                 </div>
+                 <div class="blanc">
+                    <h3><a href="parfums femmes.html">Parfums Femmes</a></h3><br><br>
+                    <ul>
+                        <li>
+                            <a href="#"> Parfums Femmes</a>
+                        </li>
+                        <li>
+                            <a href="#">Parfums Femmes Arabe</a>
+                        </li>
+                        <li>
+                            <a href="#">LES TENDANCES COFFRET PARFUM</a>
+                        </li>
+                       </ul>
+                  </div>
+                  <div class="blanc">
+                     <h3><a href="parfums hommes.html">Parfums Hommes</a></h3><br><br>
+                     <ul>
+                        <li>
+                            <a href="#"> Parfums Hommes</a>
+                        </li>
+                        <li>
+                            <a href="#">Parfums Hommes Arabe</a>
+                        </li>
+                       </ul>
+                  </div>  
+                  <div class="blanc">
+                    <h3><a href=""> FOLLOW US</a></h3><br><br>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                </div>
+             </div>
+         </div>
+     </div>
+    
+</body>
+</html>
